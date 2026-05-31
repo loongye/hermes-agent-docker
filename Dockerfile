@@ -14,4 +14,8 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends gh && \
     rm -rf /var/lib/apt/lists/*
 
+# Install ntn CLI
+
+RUN npm install --global ntn
+
 USER hermes
